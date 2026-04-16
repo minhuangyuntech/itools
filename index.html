@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Coding Tools 頂尖對決 - 大學生最佳開發利器指南</title>
-    <meta name="description" content="深入比較 Antigravity、Claude Code、Cursor 與 GitHub Copilot 等最新 AI 開發助理，協助大學生挑選最適合的 Coding 神器。">
+    <meta name="description" content="深入比較 Antigravity、Claude Code、Codex、Cursor 與 GitHub Copilot 等最新 AI 開發助理，並提供大學生可直接上手的詳細教學內容。">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,7 @@
                 <li><a href="#hero">首頁</a></li>
                 <li><a href="#comparison">效能剖析</a></li>
                 <li><a href="#features">工具總覽</a></li>
+                <li><a href="#learn">學習攻略</a></li>
             </ul>
         </div>
     </nav>
@@ -30,7 +31,7 @@
         <div class="hero-content">
             <div class="badge">🚀 2026 最新評測（已更新）</div>
             <h1>重新定義<br>你的<span class="gradient-text">開發體驗</span></h1>
-            <p>寫作業還在慢慢 Google？現在的 AI 不只會補齊你的程式碼，還能一次改寫整個專案。探索目前世界上最強大的前端與後端 AI 開發利器，專為大學生整理的完整評分指南。</p>
+            <p>寫作業還在慢慢 Google？現在的 AI 不只會補齊你的程式碼，還能一次改寫整個專案、整理需求、產生測試，甚至幫你說明為什麼這樣寫。這份指南整理目前最實用的 AI 開發工具，並補上大學生真正需要的入門流程、學習策略與提問範例。</p>
             <a href="#comparison" class="btn btn-primary">開始探索</a>
         </div>
         <div class="hero-image-placeholder">
@@ -42,12 +43,11 @@
 
     <section id="comparison" class="section">
         <div class="section-header">
-            <h2>各具特色的<span class="gradient-text">四神獸</span></h2>
-            <p>幫你找出最適合自己開發風格的神隊友。</p>
+            <h2>各具特色的<span class="gradient-text">五大神器</span></h2>
+            <p>幫你找出最適合自己開發風格的神隊友，並理解每一套工具最適合放在學習流程的哪個位置。</p>
         </div>
         
         <div class="grid cards-container">
-            
             <!-- Antigravity -->
             <div class="card glass-effect">
                 <div class="card-icon glow-cyan">
@@ -89,6 +89,28 @@
                 </ul>
                 <div class="student-verdict">
                     <strong>🎓 給學生的建議：</strong><br>資工系學生的最愛，習慣用 vim/nano 跟終端機的人必裝。
+                </div>
+            </div>
+
+            <!-- Codex -->
+            <div class="card glass-effect">
+                <div class="card-icon glow-green">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 4v10l-7 4-7-4V7l7-4z"></path><path d="M9 10l3 2 3-2"></path><path d="M12 12v5"></path></svg>
+                </div>
+                <h3>Codex</h3>
+                <p class="subtitle">會讀 repo、會執行任務的程式代理</p>
+                <div class="tags">
+                    <span class="tag">#Agent</span>
+                    <span class="tag">#OpenAI</span>
+                </div>
+                <p class="description">Codex 類型工具強調「直接在程式專案裡工作」：能讀取多個檔案、依需求修改程式、執行測試並回報結果。比起單純聊天，更像能協助完成整段開發流程的 AI 助理。</p>
+                <ul class="features-list">
+                    <li>✔️ 適合做跨檔案重構與功能實作</li>
+                    <li>✔️ 會根據 repo 脈絡做較完整的修改</li>
+                    <li>⚠️ 仍需人類確認需求與輸出品質</li>
+                </ul>
+                <div class="student-verdict">
+                    <strong>🎓 給學生的建議：</strong><br>很適合拿來做期末專題、作業修補與 code review 練習，但一定要搭配版本控制觀念一起使用。
                 </div>
             </div>
 
@@ -135,7 +157,6 @@
                     <strong>🎓 給學生的建議：</strong><br>大學期間一定要用學校信箱申請！免費的火力支援。
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -148,6 +169,7 @@
                             <th>功能特性</th>
                             <th>Antigravity</th>
                             <th>Claude Code</th>
+                            <th>Codex</th>
                             <th>Cursor</th>
                             <th>GitHub Copilot</th>
                         </tr>
@@ -157,6 +179,7 @@
                             <td>主要介面</td>
                             <td>Agent 互動</td>
                             <td>Terminal CLI</td>
+                            <td>Agent / 任務導向工作流</td>
                             <td>完整 IDE (VS Code Fork)</td>
                             <td>IDE 延伸模組</td>
                         </tr>
@@ -164,6 +187,7 @@
                             <td>自主多步執行</td>
                             <td>⭐⭐⭐⭐⭐</td>
                             <td>⭐⭐⭐⭐</td>
+                            <td>⭐⭐⭐⭐⭐</td>
                             <td>⭐⭐</td>
                             <td>⭐</td>
                         </tr>
@@ -171,6 +195,7 @@
                             <td>學生花費</td>
                             <td>視模型 API 狀態</td>
                             <td>需 API 綁卡</td>
+                            <td>視平台與額度方案</td>
                             <td>基礎版免費</td>
                             <td><span class="highlight">憑學生信箱免費</span></td>
                         </tr>
@@ -178,11 +203,210 @@
                             <td>專案上下文理解力</td>
                             <td>極高 (能檢視與研究專案)</td>
                             <td>高 (透過強大模型與 CLI)</td>
+                            <td>極高 (任務導向理解多檔案)</td>
                             <td>極高 (索引 codebase)</td>
                             <td>高 (依賴打開的檔案)</td>
                         </tr>
+                        <tr>
+                            <td>最適合的使用情境</td>
+                            <td>大型整理、跨工具研究、長流程操作</td>
+                            <td>終端機開發、快速修 bug、精準改檔</td>
+                            <td>需求轉實作、重構、測試與修補流程</td>
+                            <td>IDE 內互動編修、多檔案探索</td>
+                            <td>逐行補齊、寫函式、降低語法負擔</td>
+                        </tr>
+                        <tr>
+                            <td>初學者建議</td>
+                            <td>先學會拆解任務再使用</td>
+                            <td>先熟悉 Git 與終端機命令</td>
+                            <td>先學會寫清楚需求與驗證步驟</td>
+                            <td>最容易入門，適合第一次接觸</td>
+                            <td>最適合天天開著輔助寫 code</td>
+                        </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="section">
+        <div class="section-header">
+            <h2>不只比較，還要會用：<span class="gradient-text">大學生 AI 開發學習攻略</span></h2>
+            <p>以下內容適合直接拿來當作課堂練習、自學筆記或專題開發的操作參考。</p>
+        </div>
+
+        <div class="syllabus-note glass-effect">
+            <div>
+                <p class="eyebrow">課堂講義版整理</p>
+                <h3>建議教學定位：把 AI 工具視為「輔助學習與驗證的實驗平台」</h3>
+                <p>若要把這些工具真正導入課堂，建議不要只示範「它能幫你寫多少」，而要引導學生比較：需求描述品質、程式正確性、解釋能力、測試意識與版本控制習慣。換句話說，評量重點不只是產出結果，而是學生是否理解 AI 生成內容的理由與限制。</p>
+            </div>
+            <div class="syllabus-tags">
+                <span class="tag">#課堂示範</span>
+                <span class="tag">#專題實作</span>
+                <span class="tag">#AI素養</span>
+            </div>
+        </div>
+
+        <div class="lecture-outline glass-effect">
+            <h3>可直接納入課程的三個學習目標</h3>
+            <div class="objective-grid">
+                <article class="objective-card">
+                    <h4>學習目標 A：正確描述問題</h4>
+                    <p>學生能把模糊需求轉換成具體 prompt，包括輸入／輸出格式、限制條件、驗證方式與例外情境。</p>
+                </article>
+                <article class="objective-card">
+                    <h4>學習目標 B：評估 AI 產出品質</h4>
+                    <p>學生能判斷回覆是否正確、是否遺漏邊界條件、是否符合演算法與資料結構課程中的核心觀念。</p>
+                </article>
+                <article class="objective-card">
+                    <h4>學習目標 C：建立可重現的開發流程</h4>
+                    <p>學生能保留版本、紀錄修改原因、驗證測試結果，並知道何時應回退、重寫或拒絕採用 AI 建議。</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="learning-grid">
+            <article class="learning-card glass-effect">
+                <h3>Step 1：先定義任務，不要一開始就問「幫我寫完」</h3>
+                <p>AI 最怕的是需求太空泛。建議先把題目拆成「輸入是什麼、輸出是什麼、限制條件是什麼、你目前卡在哪裡」四件事。這樣工具才不會亂猜，回覆也會更接近你真正要的內容。</p>
+                <ul>
+                    <li>作業情境：請 AI 先解釋題意，再提供解法步驟。</li>
+                    <li>專題情境：先描述系統架構，再指定某一個模組修改。</li>
+                    <li>除錯情境：貼上錯誤訊息、預期結果與目前程式片段。</li>
+                </ul>
+            </article>
+
+            <article class="learning-card glass-effect">
+                <h3>Step 2：依工具特性分工，效率會比只用一套更高</h3>
+                <p>不同工具不一定互相取代，反而常常是互補。用 Copilot 做日常補齊、用 Cursor 做圖形化探索、用 Claude Code 或 Codex 做跨檔案任務，會比拿單一工具硬撐所有情境更有效率。</p>
+                <ul>
+                    <li>快速補語法：GitHub Copilot</li>
+                    <li>一邊看檔案一邊問問題：Cursor</li>
+                    <li>終端機精準改檔：Claude Code</li>
+                    <li>跨檔案任務與實作流程：Codex / Agent 類工具</li>
+                    <li>長流程整合與研究整理：Antigravity 類工具</li>
+                </ul>
+            </article>
+
+            <article class="learning-card glass-effect">
+                <h3>Step 3：一定要要求 AI 說明「原因」與「驗證方式」</h3>
+                <p>只拿答案不問原因，很容易變成表面上寫完，實際上卻不會。建議每次都補問：為什麼這樣寫？有沒有替代方案？我要怎麼測試？這樣才真的能把工具變成老師，而不是作弊機器。</p>
+                <ul>
+                    <li>請它解釋時間複雜度與空間複雜度。</li>
+                    <li>請它列出邊界條件與測試案例。</li>
+                    <li>請它比較兩種實作在可讀性與效能上的差異。</li>
+                </ul>
+            </article>
+
+            <article class="learning-card glass-effect">
+                <h3>Step 4：Codex 類工具怎麼用才不會失控？</h3>
+                <p>Codex 這類能直接操作 repo 的工具，強項是把需求轉成具體修改。但使用時一定要先定義範圍，例如「只改前端頁面」「只新增某個函式」「修改後要跑哪些測試」，這樣才能維持可控、可驗證、可回滾。</p>
+                <ul>
+                    <li>先要求它閱讀現有檔案並整理修改計畫。</li>
+                    <li>再要求它分批修改，而不是一次大改整站。</li>
+                    <li>最後要求它列出 diff 重點與驗證結果。</li>
+                </ul>
+            </article>
+        </div>
+
+        <div class="rubric-panel glass-effect">
+            <h3>建議評量規準：學生用了 AI，不代表可以少做思考</h3>
+            <div class="rubric-grid">
+                <div class="rubric-item">
+                    <h4>1. 問題定義</h4>
+                    <p>是否清楚界定任務範圍、輸入輸出、資料格式與成功條件。</p>
+                </div>
+                <div class="rubric-item">
+                    <h4>2. 解法理解</h4>
+                    <p>是否能口頭或書面說明 AI 產生的演算法、流程與設計理由。</p>
+                </div>
+                <div class="rubric-item">
+                    <h4>3. 驗證能力</h4>
+                    <p>是否提供測試案例、邊界條件、錯誤處理與輸出檢查方式。</p>
+                </div>
+                <div class="rubric-item">
+                    <h4>4. 工程習慣</h4>
+                    <p>是否使用版本控制、保留修改紀錄，並能回溯每次改動的原因。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="workflow-panel glass-effect">
+            <h3>推薦工作流：從作業到專題都適用</h3>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <span class="step-number">1</span>
+                    <div>
+                        <h4>理解題目</h4>
+                        <p>先請 AI 幫你把題目改寫成簡單語言，確認輸入、輸出、限制與評分標準。</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">2</span>
+                    <div>
+                        <h4>規劃解法</h4>
+                        <p>先產生流程圖、演算法步驟或模組拆分，再決定要不要開始寫程式。</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">3</span>
+                    <div>
+                        <h4>局部實作</h4>
+                        <p>從最小可驗證單位開始，例如一個函式、一個頁面、一個 API，而不是整包一次產生。</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">4</span>
+                    <div>
+                        <h4>測試與修正</h4>
+                        <p>要求工具列出測試資料、例外情境與可能 bug，再逐步修補。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="teaching-panel glass-effect">
+            <h3>授課建議：不同課程可如何導入</h3>
+            <div class="prompt-grid">
+                <div class="prompt-card">
+                    <h4>資料結構</h4>
+                    <p>要求 AI 生成 linked list、stack、tree 的實作後，請學生比較時間複雜度、記憶體配置方式與程式可讀性。</p>
+                </div>
+                <div class="prompt-card">
+                    <h4>機率與統計</h4>
+                    <p>把 AI 當作解題步驟講解員，要求它拆解推導流程，並由學生檢查公式前提與結論是否一致。</p>
+                </div>
+                <div class="prompt-card">
+                    <h4>IoT / 嵌入式應用</h4>
+                    <p>讓 AI 協助產生 Raspberry Pi 範例程式，但要求學生自己驗證腳位、感測器資料格式與實測結果。</p>
+                </div>
+                <div class="prompt-card">
+                    <h4>專題製作</h4>
+                    <p>將 Codex、Claude Code、Cursor 分工使用：一套看架構、一套做精準修改、一套支援 IDE 協作。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="prompt-panel glass-effect">
+            <h3>可直接套用的提問範例</h3>
+            <div class="prompt-grid">
+                <div class="prompt-card">
+                    <h4>概念學習型</h4>
+                    <p>「請用大一學生看得懂的方式解釋二元搜尋樹，並給我一個 C 語言小範例，最後再出 3 題練習題。」</p>
+                </div>
+                <div class="prompt-card">
+                    <h4>除錯型</h4>
+                    <p>「這段 Python 在輸入空字串時會報錯，請先找出根因，再提供最小修改版本，最後列出 5 組測試資料。」</p>
+                </div>
+                <div class="prompt-card">
+                    <h4>專題實作型</h4>
+                    <p>「請先閱讀這個前端專案的 HTML/CSS/JS，提出改版計畫，再分三步完成：新增區塊、改善文案、保持手機版可讀性。」</p>
+                </div>
+                <div class="prompt-card">
+                    <h4>Codex / Agent 協作型</h4>
+                    <p>「請先分析 repo 結構，僅修改 index.html 與 style.css，新增教學內容區塊與工具比較項目；修改後請回報變更摘要與檢查結果。」</p>
+                </div>
             </div>
         </div>
     </section>

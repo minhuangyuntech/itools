@@ -284,6 +284,7 @@ a {
 
 .glow-cyan { box-shadow: 0 0 20px var(--glow-cyan); color: #00f2fe; }
 .glow-purple { box-shadow: 0 0 20px var(--glow-purple); color: #c471ed; }
+.glow-green { box-shadow: 0 0 20px rgba(52, 211, 153, 0.35); color: #34d399; }
 .glow-orange { box-shadow: 0 0 20px var(--glow-orange); color: #f6d365; }
 .glow-white { box-shadow: 0 0 20px rgba(255,255,255,0.2); color: #fff; }
 
@@ -360,7 +361,7 @@ a {
 .comparison-table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 800px;
+    min-width: 980px;
 }
 
 .comparison-table th, 
@@ -391,6 +392,161 @@ a {
     font-weight: 700;
 }
 
+/* Learning Section */
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.syllabus-note,
+.lecture-outline,
+.rubric-panel,
+.teaching-panel {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    color: var(--primary-cyan);
+    margin-bottom: 0.6rem;
+}
+
+.syllabus-note {
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.syllabus-tags {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.lecture-outline h3,
+.rubric-panel h3,
+.teaching-panel h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.objective-grid,
+.rubric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.objective-card,
+.rubric-item {
+    padding: 1.2rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.objective-card h4,
+.rubric-item h4 {
+    font-size: 1.02rem;
+    margin-bottom: 0.5rem;
+}
+
+.learning-card {
+    padding: 1.6rem;
+}
+
+.learning-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
+}
+
+.learning-card p {
+    margin-bottom: 1rem;
+}
+
+.learning-card ul {
+    padding-left: 1.2rem;
+    color: #cbd5e1;
+}
+
+.learning-card li {
+    margin-bottom: 0.55rem;
+    line-height: 1.6;
+}
+
+.workflow-panel,
+.prompt-panel {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.workflow-panel h3,
+.prompt-panel h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.workflow-steps {
+    display: grid;
+    gap: 1rem;
+}
+
+.workflow-step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.workflow-step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--primary-purple), var(--primary-cyan));
+    color: #fff;
+    flex-shrink: 0;
+}
+
+.workflow-step h4,
+.prompt-card h4 {
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+}
+
+.prompt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.prompt-card {
+    padding: 1.2rem;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.prompt-card p {
+    color: #dbe4f0;
+    font-size: 0.95rem;
+}
+
 /* Footer */
 footer {
     border-top: 1px solid var(--card-border);
@@ -409,6 +565,10 @@ footer {
     .hero h1 {
         font-size: 2.8rem;
     }
+
+    .hero p {
+        font-size: 1rem;
+    }
     
     .nav-links {
         display: none; /* simple mobile handling */
@@ -416,5 +576,23 @@ footer {
     
     .section {
         padding: 4rem 1.5rem;
+    }
+
+    .workflow-panel,
+    .prompt-panel,
+    .learning-card,
+    .syllabus-note,
+    .lecture-outline,
+    .rubric-panel,
+    .teaching-panel {
+        padding: 1.4rem;
+    }
+
+    .syllabus-note {
+        grid-template-columns: 1fr;
+    }
+
+    .syllabus-tags {
+        justify-content: flex-start;
     }
 }
